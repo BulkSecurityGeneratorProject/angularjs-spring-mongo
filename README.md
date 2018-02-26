@@ -1,5 +1,4 @@
 # kukulkan
-This application was generated using JHipster 4.13.1, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.13.1](http://www.jhipster.tech/documentation-archive/v4.13.1).
 
 ## Development
 
@@ -29,9 +28,6 @@ auto-refreshes when files change on your hard drive.
 specifying a newer version in [bower.json](bower.json). You can also run `bower update` and `bower install` to manage dependencies.
 Add the `-h` flag on any command to see how you can use it. For example, `bower update -h`.
 
-For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
-
-
 
 ## Building for production
 
@@ -45,8 +41,6 @@ To ensure everything worked, run:
     java -jar target/*.war
 
 Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
-
-Refer to [Using JHipster in production][] for more details.
 
 ## Testing
 
@@ -66,7 +60,7 @@ For more information, refer to the [Running tests page][].
 
 ## Using Docker to simplify development (optional)
 
-You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
+You can use Docker to improve your development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
 
 For example, to start a mongodb database in a docker container, run:
 
@@ -84,22 +78,6 @@ To achieve this, first build a docker image of your app by running:
 Then run:
 
     docker-compose -f src/main/docker/app.yml up -d
-
-For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
-
-## Continuous Integration (optional)
-
-To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
-
-[JHipster Homepage and latest documentation]: http://www.jhipster.tech
-[JHipster 4.13.1 archive]: http://www.jhipster.tech/documentation-archive/v4.13.1
-
-[Using JHipster in development]: http://www.jhipster.tech/documentation-archive/v4.13.1/development/
-[Using Docker and Docker-Compose]: http://www.jhipster.tech/documentation-archive/v4.13.1/docker-compose
-[Using JHipster in production]: http://www.jhipster.tech/documentation-archive/v4.13.1/production/
-[Running tests page]: http://www.jhipster.tech/documentation-archive/v4.13.1/running-tests/
-[Setting up Continuous Integration]: http://www.jhipster.tech/documentation-archive/v4.13.1/setting-up-ci/
-
 
 [Node.js]: https://nodejs.org/
 [Yarn]: https://yarnpkg.org/
