@@ -104,12 +104,10 @@ Main page styles
     letter-spacing: -1px;
 }
 
-.hipster {
-    display: inline-block;
-    width: 347px;
-    height: 497px;
-    background: url("../images/app.png") no-repeat center top;
-    background-size: contain;
+.hipsters {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
@@ -121,7 +119,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        background: url("../images/hipster2x.png") no-repeat center top;
+        
         background-size: contain;
     }
 }
@@ -335,8 +333,29 @@ ui bootstrap tweaks
 .uib-datepicker-popup  > li > div.uib-datepicker > table:focus {
     outline: none;
 }
+/* ==========================================================================
+NUEVOS ESTILOS
+========================================================================== */
+.row.header .user>.item img {
+    width: 76px;
+    height: 54px;
+    margin-top: 0px;
+    border-radius: 2px;
+}
+.well {
+    background-color: none!important;
+    border:none!important;
 
-
-
+}
+.logo-home {
+    width: 78%;
+    top: 5px;
+    margin-left: 9px;
+}
+ul.top-menu {
+    margin-top: 85px;
+    margin-left: -43px;
+    list-style: none;
+}
 
 /* jhipster-needle-css-add-main JHipster will add new css style */

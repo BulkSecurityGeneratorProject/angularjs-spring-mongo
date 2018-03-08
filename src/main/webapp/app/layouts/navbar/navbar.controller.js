@@ -23,6 +23,7 @@
         vm.toggleNavbar = toggleNavbar;
         vm.collapseNavbar = collapseNavbar;
         vm.$state = $state;
+        vm.toggleSidebar = toggleSidebar;
 
         function login() {
             collapseNavbar();
@@ -42,5 +43,8 @@
         function collapseNavbar() {
             vm.isNavbarCollapsed = true;
         }
+        function toggleSidebar () {
+            vm.toggle = !vm.toggle;
+        };
     }
 })();
