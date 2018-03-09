@@ -104,10 +104,12 @@ Main page styles
     letter-spacing: -1px;
 }
 
-.hipsters {
+.hipster {
+    display: inline-block;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 332px;
+    background: url("../images/bg-ok.svg") no-repeat left top;
+    background-size: contain;
 }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
@@ -119,7 +121,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        
+        background: url("../images/bg-k.jpg") no-repeat center top;
         background-size: contain;
     }
 }
@@ -354,8 +356,30 @@ NUEVOS ESTILOS
 }
 ul.top-menu {
     margin-top: 85px;
-    margin-left: -43px;
+    margin-left: -40px;
     list-style: none;
 }
-
+.title-home.ng-scope {
+    font-size: 18px;
+    color: #2D3E63;
+}
+.alert-warning {
+    color: #2D3E63;
+    background-color: #fafafa!important;
+    border-color: #fafafa!important;
+}
+.row.header {
+    height: 60px;
+    background: #F5F5F5!important;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.alert-warning .alert-link {
+    color: #2D3E63!important;
+}
+ul.top-menu .sidebar-list a:hover {
+    color: #fff;
+    border-left: 3px solid #e99d1a;
+    text-indent: 22px;
+}
 /* jhipster-needle-css-add-main JHipster will add new css style */
