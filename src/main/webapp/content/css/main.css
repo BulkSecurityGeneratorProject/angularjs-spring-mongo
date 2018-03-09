@@ -382,4 +382,8 @@ ul.top-menu .sidebar-list a:hover {
     border-left: 3px solid #e99d1a;
     text-indent: 22px;
 }
+.btn {
+    width: 100%!important;
+    height: 53px!important;
+}
 /* jhipster-needle-css-add-main JHipster will add new css style */
