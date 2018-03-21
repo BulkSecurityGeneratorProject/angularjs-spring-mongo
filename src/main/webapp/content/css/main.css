@@ -1,7 +1,7 @@
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #0F5B8E;
 }
 /* ==========================================================================
 MEDIA QUERY
@@ -388,10 +388,7 @@ ul.top-menu .sidebar-list a:hover {
     border-left: 3px solid #e99d1a;
     text-indent: 22px;
 }
-.btn {
-    width: 100%!important;
-    height: 53px!important;
-}
+
 .navbar {
     width: 250px!important;
 }
@@ -448,6 +445,40 @@ ul.sidebar .sidebar-list a {
 }
 .breadcrumb-links {
     color: #2d3e63;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    color: #2D3E63 !important;
+    font-size:11px;
+    padding: 2px;
+
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #F4F4F4;
+}
+.btn.btn-success.btn-xs.ng-scope {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    line-height: 37px;
+}
+.btn {
+    width: 100%;
+
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #0F5B8E;
+}
+.info.ng-scope.ng-binding {
+    font-size: 12px;
+    color: #2D3E63;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
