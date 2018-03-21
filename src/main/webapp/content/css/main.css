@@ -3,7 +3,14 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
-
+/* ==========================================================================
+MEDIA QUERY
+========================================================================== */
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff !important;
+}
+}
 /* ==========================================================================
 Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 ========================================================================== */
@@ -32,6 +39,7 @@ Development Ribbon
     width: 15em;
     z-index: 9999;
     pointer-events: none;
+    display:none;
 }
 
 .ribbon a {
@@ -300,9 +308,7 @@ entity tables helpers
     cursor: pointer;
 }
 
-/* ==========================================================================
-entity detail page css
-========================================================================== */
+c
 .dl-horizontal.jh-entity-details > dd {
     margin-bottom: 15px;
 }
@@ -369,7 +375,7 @@ ul.top-menu {
     border-color: #fafafa!important;
 }
 .row.header {
-    height: 60px;
+    min-height: 86px;
     background: #F5F5F5!important;
     margin-bottom: 15px;
     border-bottom: 1px solid #cccccc;
@@ -433,6 +439,15 @@ ul.sidebar .sidebar-list a {
     text-indent: 25px;
     font-size: 15px;
     color: #b2bfdc;
-    line-height: 17px;
+    line-height: 31px;
+}
+.row.top {
+    margin-top: 14px;
+    margin-bottom: 0px;
+
+}
+.breadcrumb-links {
+    color: #2d3e63;
 }
 /* jhipster-needle-css-add-main JHipster will add new css style */
+

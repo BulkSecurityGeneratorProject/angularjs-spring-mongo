@@ -1,8 +1,11 @@
-<div>
-    <h2 data-translate="userManagement.home.title">Users</h2>
+<div class="row">
+<div class="col-md-12">
+<div class="widget">
+    <rd-widget-header icon="fa-users" title="Users" class="ng-scope ng-isolate-scope"><div class="widget-header ng-binding"><i class="fa fa-users" ng-class="icon"></i> Users <div class="pull-right" ng-transclude=""><input placeholder="Search" class="form-control input-sm ng-scope" type="text"><h2 class="title-user" data-translate="userManagement.home.title">Users</h2></div></div></rd-widget-header>
+    </div>
     <jhi-alert></jhi-alert>
-    <div class="row">
-      <div class="col-md-4">
+    <div class="row top">
+      <div class="pull-right">
           <button class="btn btn-primary" ui-sref="user-management.new">
               <span class="glyphicon glyphicon-flash"></span> <span data-translate="userManagement.home.createLabel">Create a new User</span>
           </button>
@@ -72,4 +75,5 @@
         <jhi-item-count page="vm.page" total="vm.queryCount" items-per-page="vm.itemsPerPage"></jhi-item-count>
         <uib-pagination class="pagination-sm" total-items="vm.totalItems" items-per-page="vm.itemsPerPage" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
     </div>
+</div>
 </div>
