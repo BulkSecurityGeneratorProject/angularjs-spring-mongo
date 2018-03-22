@@ -1,6 +1,11 @@
 <div class="table-responsive">
-    <h2 data-translate="logs.title">Logs</h2>
-
+<div class="row">
+<div class="col-md-12">
+<div class="widget">
+<rd-widget-header icon="fa-users" title="Users" class="ng-scope ng-isolate-scope"><div class="widget-header ng-binding"><i class="fas fa-database" ng-class="icon"></i>Logss<div class="pull-right" ng-transclude=""><input placeholder="Search" class="form-control input-sm ng-scope" type="text"><h2 data-translate="logs.title">Logs</h2></div></div></rd-widget-header>
+    
+    <!--  <h2 data-translate="logs.title">Logs</h2>-->
+</div>
     <p data-translate="logs.nbloggers" translate-values="{total: '{{ vm.loggers.length }}'}">There are {{ vm.loggers.length }} loggers.</p>
 
     <span data-translate="logs.filter">Filter</span> <input type="text" ng-model="filter" class="form-control">
@@ -24,4 +29,5 @@
             </td>
         </tr>
     </table>
+</div>
 </div>
