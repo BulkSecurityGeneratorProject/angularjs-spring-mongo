@@ -366,7 +366,7 @@ ul.top-menu {
     list-style: none;
 }
 .title-home.ng-scope {
-    font-size: 18px;
+    font-size: 22px!important;
     color: #2D3E63;
 }
 .alert-warning {
@@ -496,7 +496,7 @@ ul.sidebar .sidebar-list a {
     line-height: 30px;
 }
 h3, .h3 {
-    font-size: 24px;
+    font-size: 16px;
     color:#2D3E63;
  
 }
@@ -511,6 +511,9 @@ h4, .h4 {
 h2, .h2 {
     font-size: 30px;
     color:#0F5B8E;
+}
+.widget-header.ng-binding {
+    font-size: 20px;
 }
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
