@@ -12,6 +12,7 @@
 
         vm.isNavbarCollapsed = true;
         vm.isAuthenticated = Principal.isAuthenticated;
+        vm.isSidebarCollapsed = true;
 
         ProfileService.getProfileInfo().then(function(response) {
             vm.inProduction = response.inProduction;
@@ -44,7 +45,13 @@
             vm.isNavbarCollapsed = true;
         }
         function toggleSidebar () {
-            vm.toggle = !vm.toggle;
+            var pageWrapper = angular.element("#page-wrapper");
+            if (vm.isSidebarCollapsed) {
+            	pageWrapper.addClass('open');
+            } else {
+            	pageWrapper.removeClass('open');
+            }
+            vm.isSidebarCollapsed = !vm.isSidebarCollapsed;
         };
     }
 })();

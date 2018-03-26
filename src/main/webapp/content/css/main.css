@@ -118,6 +118,7 @@ Main page styles
     height: 332px;
     background: url("../images/bg-ok.svg") no-repeat left top;
     background-size: contain;
+    margin-top: 10px;
 }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
@@ -308,10 +309,12 @@ entity tables helpers
     cursor: pointer;
 }
 
-c
+
 .dl-horizontal.jh-entity-details > dd {
     margin-bottom: 15px;
 }
+
+
 
 @media screen and (min-width: 768px) {
     .dl-horizontal.jh-entity-details > dt {
@@ -324,6 +327,7 @@ c
         margin-left: 0;
     }
 }
+
 
 /* ==========================================================================
 ui bootstrap tweaks
@@ -514,6 +518,18 @@ h2, .h2 {
 }
 .widget-header.ng-binding {
     font-size: 20px;
+}
+.logo img {
+    width: 161px;
+    margin-top: -14px;
+}
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: -33px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    z-index: 999;
 }
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
