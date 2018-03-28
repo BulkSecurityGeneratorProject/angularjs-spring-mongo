@@ -1,7 +1,8 @@
 body {
     background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif !important;
     color: #273758 !important;
+    font-size:.875rem;
 }
 /* ==========================================================================
 MEDIA QUERY
@@ -15,9 +16,15 @@ MEDIA QUERY
 @media (min-width: 768px){
 .navbar-right {
     float: right !important;
-    margin-right: 28px;
+    margin-right: 33px;
 }
 }
+@media only screen and (min-width: 561px){
+#page-wrapper.open {
+    padding-left: 201px;
+}
+}
+
 /* ==========================================================================
 Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 ========================================================================== */
@@ -405,11 +412,11 @@ ul.top-menu .sidebar-list a:hover {
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #ffffff;
-    background-color: #0F5B8E!important;
+
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #ffffff;
-    background-color: #11649B!important;
+    background-color: #FDB03C!important;
     
 }
 .navbar-default .navbar-nav > li > a {
@@ -421,7 +428,7 @@ ul.top-menu .sidebar-list a:hover {
 }
 .glyphicon {
     position: relative;
-    top: 3px;
+    top: 7px;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
@@ -430,16 +437,16 @@ ul.top-menu .sidebar-list a:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     float: right;
-    left: -8px;
+    left: -9px;
 }
 ul.sidebar .sidebar-list a:hover {
     color: #fff;
-    border-left: 10px solid #e99d1a;
+    border-left: 2px solid #e99d1a;
     text-indent: 22px;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color: #1F80C0;
+    background-color: #175F8E;
 }
 ul.sidebar .sidebar-main {
     height: 60px;
@@ -483,7 +490,7 @@ ul.sidebar .sidebar-list a {
     margin-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background: #0F5B8E;
+    background: #175F8E;
 }
 .info.ng-scope.ng-binding {
     font-size: 12px;
@@ -533,20 +540,37 @@ h2, .h2 {
 #sidebar-wrapper {
     margin-left: -150px;
     left: 9px;
-    width: 208px;
+    width: 201px;
     position: fixed;
     height: 100%;
     z-index: 999;
 }
 ul.sidebar {
-    width: 208px;
+    width: 201px;
 
 }
 ul.sidebar li a {
     width: 225px;
 }
 ul.sidebar .sidebar-main .menu-icon {
-    padding-right: 31px;
+    padding-right: 38px;
 }
+.dropdown-menu {
+    margin-left: -9px;
+
+}
+#sidebar-wrapper {
+    background: #2E3F61 !important;
+}
+.dropdown-menu {  
+    border: none !important; 
+    border: none !important; 
+   -webkit-box-shadow: none !important; 
+    box-shadow: none !important; 
+}
+.dropdown-menu > li > a {
+    padding: 10px 16px 10px 5px;
+}
+
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
