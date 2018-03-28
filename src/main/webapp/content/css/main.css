@@ -10,6 +10,13 @@ MEDIA QUERY
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #fff !important;
 }
+
+}
+@media (min-width: 768px){
+.navbar-right {
+    float: right !important;
+    margin-right: 28px;
+}
 }
 /* ==========================================================================
 Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
@@ -360,7 +367,7 @@ NUEVOS ESTILOS
 
 }
 .logo-home {
-    width: 78%;
+    width: 63%;
     margin-top: -40px;
     margin-left: 9px;
 }
@@ -423,7 +430,7 @@ ul.top-menu .sidebar-list a:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     float: right;
-    left:3px;
+    left: -8px;
 }
 ul.sidebar .sidebar-list a:hover {
     color: #fff;
@@ -432,14 +439,14 @@ ul.sidebar .sidebar-list a:hover {
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color: #e7e7e7;
+    background-color: #1F80C0;
 }
 ul.sidebar .sidebar-main {
     height: 60px;
 }
 ul.sidebar .sidebar-list a {
     text-indent: 25px;
-    font-size: 15px;
+    font-size: 14px;
     color: #b2bfdc;
     line-height: 31px;
 }
@@ -525,11 +532,21 @@ h2, .h2 {
 }
 #sidebar-wrapper {
     margin-left: -150px;
-    left: -33px;
-    width: 250px;
+    left: 9px;
+    width: 208px;
     position: fixed;
     height: 100%;
     z-index: 999;
+}
+ul.sidebar {
+    width: 208px;
+
+}
+ul.sidebar li a {
+    width: 225px;
+}
+ul.sidebar .sidebar-main .menu-icon {
+    padding-right: 31px;
 }
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
