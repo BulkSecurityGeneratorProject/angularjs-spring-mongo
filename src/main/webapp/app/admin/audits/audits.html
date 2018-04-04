@@ -1,6 +1,9 @@
-<div>
-    <h2 data-translate="audits.title">Audits</h2>
-
+<div class="row">
+<div class="col-md-12">
+<div class="widget">
+<rd-widget-header icon="fa-users" title="Users" class="ng-scope ng-isolate-scope"><div class="widget-header ng-binding"><i class="fas fa-edit" ng-class="icon"></i>Audits<div class="pull-right" ng-transclude=""><input placeholder="Search" class="form-control input-sm ng-scope" type="text"><h2 data-translate="audits.title">Audits</h2></div></div></rd-widget-header>
+    
+</div>
     <div class="row">
         <div class="col-md-5">
             <h4 data-translate="audits.filter.title">Filter by date</h4>
@@ -38,4 +41,5 @@
     <div class="text-center">
         <uib-pagination class="pagination-sm" total-items="vm.totalItems" ng-model="vm.page" ng-change="vm.loadPage(vm.page)"></uib-pagination>
     </div>
+</div>
 </div>

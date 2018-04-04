@@ -1,9 +1,14 @@
-<div>
-    <h2 data-translate="metrics.title">Application Metrics</h2>
-    <p>
+<div class="row">
+<div class="col-md-12">
+<div class="widget">
+<rd-widget-header icon="fa-users" title="Users" class="ng-scope ng-isolate-scope"><div class="widget-header ng-binding"><i class="fas fa-chart-area" ng-class="icon"></i> Application Metrics<div class="pull-right" ng-transclude=""><input placeholder="Search" class="form-control input-sm ng-scope" type="text"><h2 data-translate="metrics.title">Application Metrics</h2></div></div></rd-widget-header>
+    
+    </div>
+    <div class="row top">
+    <div class="pull-right">
         <button type="button" class="btn btn-primary" ng-click="vm.refresh()"><span class="glyphicon glyphicon-refresh"></span>&nbsp;<span data-translate="metrics.refresh.button">Refresh</span></button>
-    </p>
-
+    </div>
+</div>
     <h3 data-translate="metrics.jvm.title">JVM Metrics</h3>
     <div class="row" ng-hide="vm.updatingMetrics">
         <div class="col-md-4">
@@ -243,5 +248,6 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
 </div>

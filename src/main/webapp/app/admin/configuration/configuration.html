@@ -1,6 +1,9 @@
-<div>
-    <h2 data-translate="configuration.title">Configuration</h2>
-
+<div class="row">
+<div class="col-md-12">
+<div class="widget">
+<rd-widget-header icon="fa-users" title="Users" class="ng-scope ng-isolate-scope"><div class="widget-header ng-binding"><i class="fas fa-cog" ng-class="icon"></i> Configuration<div class="pull-right" ng-transclude=""><input placeholder="Search" class="form-control input-sm ng-scope" type="text"><h2 data-translate="configuration.title">Configuration</h2></div></div></rd-widget-header>
+    
+</div>
     <span data-translate="configuration.filter">Filter (by prefix)</span> <input type="text" ng-model="filter" class="form-control">
     <h3 ng-hide="filteredConfig.length === 0">Spring configuration</h3>
     <table class="table table-condensed table-striped table-bordered table-responsive"
@@ -44,4 +47,5 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>

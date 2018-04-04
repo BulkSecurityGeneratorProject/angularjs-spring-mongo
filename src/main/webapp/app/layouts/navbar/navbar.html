@@ -1,5 +1,23 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
+
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+	<ul class="sidebar">
+	<li class="sidebar-main">
+          <a ng-click="vm.toggleSidebar()">
+           
+            <span class="menu-icon glyphicon glyphicon-transfer"></span>
+          </a>
+        </li>
+		<li class="sidebar-main"><a ng-click="vm.toggleSidebar()">
+				<div class="logo-home">
+					<img src="content/images/logo-b.svg" srcset="content/images/isotipo.svg 480w" >
+				</div> <!--<span class="menu-icon glyphicon glyphicon-transfer"></span>-->
+		</a></li>
+		<li class="sidebar-title"><span
+			data-translate="global.menu.account.main">Account</span></li>
+
+		<nav class="navbar navbar-default sidebar-list" role="navigation">
+    
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" ng-click="vm.toggleNavbar()">
                 <span class="sr-only">Toggle navigation</span>
@@ -7,10 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand logo" href="#/" ng-click="vm.collapseNavbar()">
-                <img class="logo-img" src="content/images/logo-app.png" alt="logo"/>
-                <span data-translate="global.title">Kukulkan</span> <span class="navbar-version">v{{VERSION}}</span>
-            </a>
+            
         </div>
         <div class="navbar-collapse" uib-collapse="vm.isNavbarCollapsed" ng-switch="vm.isAuthenticated()">
             <ul class="nav navbar-nav navbar-right">
@@ -148,5 +163,32 @@
                 </li>
             </ul>
         </div>
-    </div>
+    
 </nav>
+		
+	</ul>
+	
+	
+
+	<div class="sidebar-footer">
+		<div class="col-xs-12">
+			<a href="https://github.com/rdash/rdash-angular" target="_blank">
+				Kukulkan 2018 </a>
+		</div>
+		<!--  
+		<div class="col-xs-4">
+			<a href="https://github.com/rdash/rdash-angular" target="_blank">
+				Github </a>
+		</div>
+		<div class="col-xs-4">
+			<a
+				href="https://github.com/rdash/rdash-angular/blob/master/README.md"
+				target="_blank"> About </a>
+		</div>
+		<div class="col-xs-4">
+			<a href="#"> Support </a>
+		</div>-->
+	</div>
+</div>
+<!-- End Sidebar -->
+
